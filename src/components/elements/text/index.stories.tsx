@@ -1,16 +1,16 @@
-import { Text as Component } from '.';
-import { TextProps as Props } from './types';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { Text as Component } from ".";
+import { TextProps as Props } from "./types";
+import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 export type ComponentProps = typeof Component;
 
 export default {
-  title: 'Elements/Text',
+  title: "Elements/Text",
   component: Component,
   argTypes: {
     children: {
       description: "The Text's content",
-      type: 'string',
+      type: "string",
     },
   },
   args: {
