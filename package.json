@@ -10,7 +10,7 @@
     "build-storybook": "build-storybook",
     "pre-commit": "lint-staged",
     "test": "jest --coverage",
-    "lint": "eslint --fix --ext .ts,.tsx ."
+    "lint": "eslint --fix --ext .ts,.tsx,.js,.jsx ."
   },
   "devDependencies": {
     "@babel/core": "^7.17.5",
