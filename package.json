@@ -1,9 +1,8 @@
 {
-  "name": "design-system",
+  "name": "@aniside/ui",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:the-aniside/design-system.git",
-  "author": "Matheus Littig <littig.works@gmail.com>",
   "license": "MIT",
   "scripts": {
     "storybook": "start-storybook -p 6006",
@@ -51,5 +50,10 @@
     "@stitches/react": "^1.2.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
+  },
+  "lint-staged": {
+    "src/**/*.+(js|json|ts|tsx)": [
+      "eslint"
+    ]
   }
 }
