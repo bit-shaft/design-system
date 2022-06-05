@@ -1,8 +1,8 @@
-import { globalStyles } from '@/config/global'
+import { globalStyles } from './styles'
 import { ThemeProviderProps } from './types'
 
-export const ThemeProvider = (props: ThemeProviderProps) => {
+export const ThemeProvider = ({ children }: ThemeProviderProps) => {
 	globalStyles()
 
-	return props.children
+	return children
 }

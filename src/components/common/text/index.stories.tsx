@@ -5,7 +5,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react'
 export type ComponentProps = typeof Component;
 
 export default {
-	title: 'Elements/Text',
+	title: 'Common/Text',
 	component: Component,
 	argTypes: {
 		children: {
