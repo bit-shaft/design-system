@@ -1,9 +1,14 @@
-import { Text as Component } from '.'
-import { TextProps as Props } from './types'
+/** packages */
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 
-export type ComponentProps = typeof Component;
+/** compose */
+import { Text as Component } from '.'
+import { TextProps as Props } from './types'
 
+/** types */
+type ComponentProps = typeof Component;
+
+/** main */
 export default {
 	title: 'Common/Text',
 	component: Component,
@@ -18,6 +23,10 @@ export default {
 	},
 } as ComponentMeta<ComponentProps>
 
-export const Text: ComponentStory<ComponentProps> = (props: Props) => (
+/** render */
+const Text: ComponentStory<ComponentProps> = (props: Props) => (
 	<Component {...props} />
 )
+
+/** exports */
+export { Text }

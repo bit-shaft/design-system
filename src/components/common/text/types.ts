@@ -1,3 +1,9 @@
-export type TextProps = {
-  children: React.ReactNode
-} & React.HTMLAttributes<HTMLParagraphElement>
+/** compose */
+import { DefaultProps, VariantProps } from '@/types'
+import { wrapper } from './styles'
+
+/** types */
+type TextProps = DefaultProps & VariantProps<typeof wrapper>
+
+/** exports */
+export type { TextProps }

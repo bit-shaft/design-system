@@ -1,8 +1,14 @@
+/** compose */
 import { globalStyles } from './styles'
 import { ThemeProviderProps } from './types'
 
-export const ThemeProvider = ({ children }: ThemeProviderProps) => {
+/** main */
+const ThemeProvider = ({ children }: ThemeProviderProps) => {
 	globalStyles()
 
+	/** render JSX */
 	return children
 }
+
+/** exports */
+export { ThemeProvider }
