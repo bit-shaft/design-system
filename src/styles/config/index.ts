@@ -1,26 +1,38 @@
 /** lib exports */
 import { utils } from './lib/utils'
-import { themes } from './lib/themes'
+import { media } from './lib/media'
+import { themes, getTheme } from './lib/themes'
 
-export const lib = {
+const lib = {
 	utils,
 	themes,
+	media,
+	getTheme,
 }
 
-/** fonts exports */
-import { heading } from './fonts/heading'
-import { paragraph } from './fonts/paragraph'
+/** base exports */
+import { sizes } from './base/sizes'
+import { fontSizes } from './base/font-sizes'
+import { fontWeights } from './base/font-weights'
+import { radius } from './base/radius'
+import { spaces } from './base/spaces'
 
-export const typography = {
-	heading,
-	paragraph,
+const base = {
+	sizes,
+	fontSizes,
+	fontWeights,
+	radius,
+	spaces,
 }
 
 /** colors exports */
 import { mainColors } from './colors/main'
 import { auxColors } from './colors/aux'
 
-export const colors = {
+const colors = {
 	main: mainColors,
 	aux: auxColors,
 }
+
+/** exports */
+export { lib, base, colors }

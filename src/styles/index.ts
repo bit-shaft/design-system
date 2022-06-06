@@ -1,9 +1,15 @@
+/** packages */
 import { createStitches } from '@stitches/core'
+
+/** compose */
 import { lib } from './config'
 
+/** main */
 const stitches = createStitches({
-	theme: lib.themes.dark,
+	theme: lib.getTheme('dark'),
 	utils: lib.utils,
+	media: lib.media,
 })
 
+/** exports */
 export { stitches }
